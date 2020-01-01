@@ -1,5 +1,5 @@
 {% set name = "thriftpy2" %}
-{% set version = "0.4.9" %}
+{% set version = "0.4.10" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6a288463f4f9457b01136933197dc4814093824ce42ca9170c4a56704b3b6b75
+  sha256: 0bd98580bdb1d1184338e5f105b685f55f3fd60e6335c72d9bb7634ed284cc57
 
 build:
   number: 0
