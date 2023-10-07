@@ -19,12 +19,17 @@ requirements:
   host:
     - pip
     - python
+    - cython >=0.28.4,<4
   run:
     - six >=1.15,<2.dev0
     - ply >=3.4,<4.0
     - python
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - thriftpy2
     - thriftpy2.parser
