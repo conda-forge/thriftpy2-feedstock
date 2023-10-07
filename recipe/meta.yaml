@@ -18,6 +18,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - pip
+    - cython <3
     - python
   run:
     - six >=1.15,<2.dev0
