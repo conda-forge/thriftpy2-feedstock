@@ -23,7 +23,8 @@ requirements:
   host:
     - pip
     - python
-    - cython >=0.28.4,<4
+    - cython >=3,<4
+    - setuptools
   run:
     - cython >=3.0.10
     - six >=1.15,<2.dev0
