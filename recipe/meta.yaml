@@ -10,7 +10,7 @@ source:
   sha256: cefcb2f6f8b12c00054c6f942dd2323a53b48b8b6862312d03b677dcf0d4a6da
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -23,7 +23,8 @@ requirements:
   host:
     - pip
     - python
-    - cython >=0.28.4,<4
+    - cython >=3,<4
+    - setuptools
   run:
     - cython >=3.0.10
     - six >=1.15,<2.dev0
