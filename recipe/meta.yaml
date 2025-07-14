@@ -24,9 +24,9 @@ requirements:
     - pip
     - python
     - cython >=3,<4
-    - setuptools
+    - toml
+    - setuptools >=68
   run:
-    - cython >=3.0.10
     - six >=1.15,<2.dev0
     - ply >=3.4,<4.0
     - python
