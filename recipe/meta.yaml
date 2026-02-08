@@ -1,5 +1,5 @@
 {% set name = "thriftpy2" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ade0165ba060b97333bc7a927229e992441bfa17bb8e13ea05590c2ec3551b17
+  sha256: 621c263f99274d51a9a1deecf301845f1408d497bdafed682db6155132a99cf4
 
 build:
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
@@ -27,6 +27,7 @@ requirements:
     - toml
     - setuptools >=68
   run:
+    - typing_extensions >=3.7.4
     - six >=1.15,<2.dev0
     - ply >=3.4,<4.0
     - python
